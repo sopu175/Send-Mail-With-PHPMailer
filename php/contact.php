@@ -10,11 +10,6 @@ $mail = new PHPMailer(true);
 
 if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['comment'])) {
 	if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-// 	    while(true) {
-//     	mail($to, $subject, $message, $headers) or die('<span class="text-danger">Error sending Mail</span>');
-// }
-
-
 try {
     //Server settings
    // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
